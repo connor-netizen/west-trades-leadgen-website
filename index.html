@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West Trades Group | Quality Trade Connections Across Auckland</title>
+  <meta name="description" content="Connect with Auckland's best independent trade professionals. Modern coordination with AI-enhanced matching for quality results.">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FPXS9GDD5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3FPXS9GDD5');
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.svg" alt="West Trades Group" height="40">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link nav-active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-bg.jpg');"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Connect with Auckland's Best Trades</h1>
+      <p class="hero-subtitle">Professional coordination. Vetted tradespeople. Quality results delivered.</p>
+      <a href="#project-form" class="btn btn-primary">Submit Your Project</a>
+    </div>
+  </section>
+
+  <!-- How It Works Preview -->
+  <section class="how-it-works-preview">
+    <div class="container">
+      <h2>Simple Process, Quality Results</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Submit Details</h3>
+          <p>Tell us about your project through our comprehensive form. Our AI analysis helps us understand your exact needs.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Smart Matching</h3>
+          <p>Using modern coordination systems and automated matching, we connect you with the right trade professionals from our vetted network.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Get Quality Work</h3>
+          <p>Experienced, independent trades deliver professional results while our systems keep everything organized efficiently.</p>
+        </div>
+      </div>
+      <a href="how-it-works.html" class="btn btn-secondary">Learn More About Our Process & Technology</a>
+    </div>
+  </section>
+
+  <!-- Project Form Section -->
+  <section class="form-teaser" id="project-form">
+    <div class="container container-narrow">
+      <h2>Tell Us About Your Project</h2>
+      <p>Fill out a quick form and we'll connect you with the right trade professionals from our verified network.</p>
+      
+      <form name="project-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="enquiry-form">
+        <input type="hidden" name="form-name" value="project-enquiry">
+        <p class="hidden">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Project Location *</label>
+            <input type="text" id="location" name="location" placeholder="Suburb, Auckland" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">What type of project? *</label>
+          <select id="project-type" name="project-type" required>
+            <option value="">Select project type</option>
+            <option value="bathroom-renovation">Bathroom Renovation</option>
+            <option value="kitchen-renovation">Kitchen Renovation</option>
+            <option value="deck-outdoor">Deck / Outdoor Construction</option>
+            <option value="drainage-earthworks">Drainage & Earthworks</option>
+            <option value="property-maintenance">Property Maintenance</option>
+            <option value="full-renovation">Full Home Renovation</option>
+            <option value="new-build">New Build</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Project Description *</label>
+          <textarea id="description" name="description" rows="4" placeholder="Tell us what you're looking to get done..." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="timeline">When do you want to start?</label>
+            <select id="timeline" name="timeline">
+              <option value="">Select timeline</option>
+              <option value="asap">As soon as possible</option>
+              <option value="1-2-months">1-2 months</option>
+              <option value="3-6-months">3-6 months</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Estimated Budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select range</option>
+              <option value="under-5k">Under $5,000</option>
+              <option value="5k-15k">$5,000 - $15,000</option>
+              <option value="15k-30k">$15,000 - $30,000</option>
+              <option value="30k-60k">$30,000 - $60,000</option>
+              <option value="60k-plus">$60,000+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="additional-notes">Additional Information</label>
+          <textarea id="additional-notes" name="additional-notes" rows="3" placeholder="Any specific requirements, access issues, or other details we should know..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-large">Get Matched with Trades</button>
+        <p class="form-note">We'll review your project and connect you with suitable trade professionals within 24 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Network Partners Preview -->
+  <section class="partners-preview">
+    <div class="container">
+      <h3>Trusted Network Partners</h3>
+      <p>We work with Auckland's best independent trade professionals</p>
+      <div class="partner-logos">
+        <a href="https://www.instagram.com/roygibsonbuilders" class="partner-logo" target="_blank" rel="noopener">
+          <img src="images/partner-roy-gibson.png" alt="Roy Gibson Builders">
+        </a>
+        <a href="https://www.facebook.com/people/Cleancut-Property-Maintenance/100089935121493/" class="partner-logo" target="_blank" rel="noopener">
+          <img src="images/partner-cleancut.png" alt="Cleancut Property Maintenance">
+        </a>
+        <a href="https://www.strongtrax.co.nz" class="partner-logo" target="_blank" rel="noopener">
+          <img src="images/partner-strongtrax.png" alt="StrongTrax Co">
+        </a>
+      </div>
+      <a href="about.html#network" class="link-secondary">See All Partners →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="images/logo.svg" alt="West Trades Group" height="32" class="footer-logo">
+          <p class="footer-tagline">Modern trade connections for Auckland projects</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="coming-soon.html" class="footer-link-green">What's Coming</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get Started</h4>
+          <a href="contact.html">Submit a Project</a>
+          <a href="about.html#join-network">Join Our Network</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 West Trades Group Ltd. All rights reserved.</p>
+        <p class="footer-disclaimer">West Trades Group facilitates connections with independent trade contractors. All trade work is performed by licensed, independent professionals.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

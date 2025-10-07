@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | West Trades Group</title>
+  <meta name="description" content="Get in touch with West Trades Group. Submit your project or enquire about joining our network of trade professionals.">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FPXS9GDD5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3FPXS9GDD5');
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.svg" alt="West Trades Group" height="40">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link nav-cta nav-active">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get Started</h1>
+      <p class="lead">Tell us about your project and we'll connect you with the right trade professionals</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="container container-narrow">
+      
+      <form name="project-enquiry-full" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="enquiry-form">
+        <input type="hidden" name="form-name" value="project-enquiry-full">
+        <p class="hidden">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <h2>Your Project Details</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Project Location *</label>
+            <input type="text" id="location" name="location" placeholder="Suburb, Auckland" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">Project Type *</label>
+          <select id="project-type" name="project-type" required>
+            <option value="">Select your project type</option>
+            <option value="bathroom-renovation">Bathroom Renovation</option>
+            <option value="kitchen-renovation">Kitchen Renovation</option>
+            <option value="deck-outdoor">Deck / Outdoor Construction</option>
+            <option value="property-maintenance">Property Maintenance</option>
+            <option value="full-renovation">Full Home Renovation</option>
+            <option value="extension">Home Extension</option>
+            <option value="new-build">New Build</option>
+            <option value="repairs">Repairs & Fixes</option>
+            <option value="other">Other (please specify in description)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Project Description *</label>
+          <textarea id="description" name="description" rows="5" placeholder="Please describe what you're looking to get done. Include any specific requirements, materials preferences, or details that will help us match you with the right trades." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="timeline">When would you like to start?</label>
+            <select id="timeline" name="timeline">
+              <option value="">Select timeline</option>
+              <option value="urgent">ASAP (within 2 weeks)</option>
+              <option value="1-month">Within 1 month</option>
+              <option value="1-2-months">1-2 months</option>
+              <option value="3-6-months">3-6 months</option>
+              <option value="flexible">Flexible / Planning stage</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Estimated Budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select budget range</option>
+              <option value="under-5k">Under $5,000</option>
+              <option value="5k-15k">$5,000 - $15,000</option>
+              <option value="15k-30k">$15,000 - $30,000</option>
+              <option value="30k-60k">$30,000 - $60,000</option>
+              <option value="60k-100k">$60,000 - $100,000</option>
+              <option value="100k-plus">$100,000+</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="property-type">Property Type</label>
+          <select id="property-type" name="property-type">
+            <option value="">Select property type</option>
+            <option value="residential-owner">Residential (I live here)</option>
+            <option value="rental-property">Rental Property</option>
+            <option value="investment">Investment Property</option>
+            <option value="commercial">Commercial Property</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="access-notes">Access or Site Considerations</label>
+          <textarea id="access-notes" name="access-notes" rows="2" placeholder="Any access issues, parking restrictions, site conditions, or scheduling constraints we should know about?"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="additional-notes">Additional Information</label>
+          <textarea id="additional-notes" name="additional-notes" rows="3" placeholder="Anything else you'd like us to know..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="hear-about">How did you hear about us?</label>
+          <select id="hear-about" name="hear-about">
+            <option value="">Select one</option>
+            <option value="google">Google Search</option>
+            <option value="referral">Referral from friend/colleague</option>
+            <option value="social-media">Social Media</option>
+            <option value="existing-tradie">Through a trade professional</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-large">Submit Project Enquiry</button>
+        <p class="form-note">We'll review your project details and typically respond within 24 hours to connect you with suitable trade professionals from our network.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="contact-info-section">
+    <div class="container">
+      <h3>Other Ways to Reach Us</h3>
+      <div class="contact-methods">
+        <div class="contact-method">
+          <h4>Email</h4>
+          <p><a href="mailto:enquiries@westtrades.co.nz">enquiries@westtrades.co.nz</a></p>
+        </div>
+        <div class="contact-method">
+          <h4>Service Area</h4>
+          <p>Auckland-wide coverage<br>Based in West Auckland</p>
+        </div>
+        <div class="contact-method">
+          <h4>For Trade Professionals</h4>
+          <p>Interested in joining our network? <a href="about.html#join-network">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="images/logo.svg" alt="West Trades Group" height="32" class="footer-logo">
+          <p class="footer-tagline">Modern trade connections for Auckland projects</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="coming-soon.html" class="footer-link-green">What's Coming</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get Started</h4>
+          <a href="contact.html">Submit a Project</a>
+          <a href="about.html#join-network">Join Our Network</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 West Trades Group Ltd. All rights reserved.</p>
+        <p class="footer-disclaimer">West Trades Group facilitates connections with independent trade contractors. All trade work is performed by licensed, independent professionals.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
