@@ -1,0 +1,7 @@
+{
+  "name": "west-trades-website",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@netlify/plugin-forms-rate-limit": "^1.0.0"
+  }
+}
