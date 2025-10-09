@@ -75,13 +75,21 @@
   const forms = document.querySelectorAll('form[data-netlify="true"]');
   forms.forEach(function(form) {
     form.addEventListener('submit', function(e) {
+      // Google Analytics conversion tracking
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'form_submit', {
+          'event_category': 'engagement',
+          'event_label': 'project_enquiry'
+        });
+      }
+
       // Optional: Add loading state
       const submitBtn = form.querySelector('button[type="submit"]');
       if (submitBtn) {
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Submitting...';
         submitBtn.disabled = true;
-        
+
         // Re-enable after a delay (Netlify handles the actual submission)
         setTimeout(function() {
           submitBtn.textContent = originalText;
